@@ -1,25 +1,36 @@
 #write a program to convert given 3 digit amount into words
-# input : 175 output : one hundred seventy five 
+# input : 175 output : one hundred seventy five
 
+#Getting amount
+amount = input("Enter 3 digit amount: ")
+#Converting into int
+amount = int(amount)
 
+#Getting number into 1 and the last 2 parts
+fd = amount // 100
+ld = amount % 100
 
-amount = input("Enter Amount :") #GETTING NUMBER
+flis = ['', 'one hundred', 'two hundred', 'three hundred', 'four hundred',
+            'five hundred', 'six hundred', 'seven hundred', 'eight hundred', 'nine hundred']
 
-amount =int(amount) #CONVENTING INTO INT
-temp =amount
+number = ['', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
+         'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
+         'sixteen', 'seventeen', 'eighteen', 'nineteen',
+         'twenty', 'twenty one', 'twenty two', 'twenty three', 'twenty four',
+         'twenty five', 'twenty six', 'twenty seven', 'twenty eight', 'twenty nine',
+         'thirty', 'thirty one', 'thirty two', 'thirty three', 'thirty four',
+         'thirty five', 'thirty six', 'thirty seven', 'thirty eight', 'thirty nine',
+         'forty', 'forty one', 'forty two', 'forty three', 'forty four',
+         'forty five', 'forty six', 'forty seven', 'forty eight', 'forty nine',
+         'fifty', 'fifty one', 'fifty two', 'fifty three', 'fifty four',
+         'fifty five', 'fifty six', 'fifty seven', 'fifty eight', 'fifty nine',
+         'sixty', 'sixty one', 'sixty two', 'sixty three', 'sixty four',
+         'sixty five', 'sixty six', 'sixty seven', 'sixty eight', 'sixty nine',
+         'seventy', 'seventy one', 'seventy two', 'seventy three', 'seventy four',
+         'seventy five', 'seventy six', 'seventy seven', 'seventy eight', 'seventy nine',
+         'eighty', 'eighty one', 'eighty two', 'eighty three', 'eighty four',
+         'eighty five', 'eighty six', 'eighty seven', 'eighty eight', 'eighty nine',
+         'ninety', 'ninety one', 'ninety two', 'ninety three', 'ninety four',
+         'ninety five', 'ninety six', 'ninety seven', 'ninety eight', 'ninety nine']
 
-
-fd = temp//100#GETTING FIRST ELEMENT #156 = 1
-temp = temp //10   #15
-md = temp %10  #GETTING MIDDLE NUMBER #5
-ld = amount % 10 #GETTING LAST ELEMENT #6
-print(fd,md,ld)
-
-
-
-#LIST OF WORDS
-
-fdlist=[' ','one hundred','two hundred','three hundred','four hundred','five hundred','six hundred','seven hundred','eight hundred','nine hundred']
-mdlist=['','','twenty','thirty','fouty','fifthy','sixty','seventy','eighty','ninety']
-ldlist=['zero','one','two','three','four','five','six','seven','eight','nine']
-print(fdlist[fd]+" "+mdlist[md]+" "+ldlist[ld])
+print(flis[fd], number[ld])
