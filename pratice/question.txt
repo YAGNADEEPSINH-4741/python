@@ -1,0 +1,27 @@
+1.Create a list and find the position (index) of a given element.
+
+2.Create a list and make an exact duplicate copy of it.
+
+3.Create a list and delete one specific element from it.
+
+4.Create a list and add 3 new elements at the end.
+
+5.Create a tuple of numbers and find the largest element.
+
+6.Create a tuple of numbers and find the smallest element.
+
+7.Create a tuple and check whether a specific value is present or not.
+
+8.Create a tuple and convert it into a string (tuple contains words).
+
+9.Create two sets and find elements that are only in one set but not in both.
+
+10.Create a set and remove one random element from it.
+
+11.Check whether one set is fully contained inside another set.
+
+12.Create a dictionary and access the value of a key safely (even if key does not exist).
+
+13.Create a dictionary and change/update the value of an existing key.
+
+14.Create a dictionary and delete a key-value pair.
