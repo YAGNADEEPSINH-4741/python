@@ -6,6 +6,7 @@
 """
 mz=""
 i=1
+run=True
 while i<3:
     if i==1:
         print("Enter birthdate  of male")
@@ -19,6 +20,7 @@ while i<3:
     (m == 9 and d > 30) or (m == 10 and d > 31) or (m == 11 and d > 30) or (m == 12 and d > 31) or\
     (m<0 or m>12) or d<1 :
         print("Invalid information entered")
+        run=False
     else:
         if(d>=21 and m==3) or (d<=19 and m==4):
             mz="Aries"
@@ -52,106 +54,104 @@ while i<3:
         female=mz
     i+=1
 
-print(male,female)
-
-if male == "Aries":
-        if female == "Taurus" or female == "Capricorn" or female == "Cancer" or female == "Scorpio":
-            print("\nMarriage Compatibility :  Not Favorable")
-        elif female == "Virgo" or female == "Pisces":
-            print("\nMarriage Compatibility :  Favorable Match")
-        else:
-            print("\nMarriage Compatibility :  Great Match")
-
-elif male == "Leo":
-        if female == "Virgo" or female == "Capricorn":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Taurus" or female == "Aquarius" or female == "Cancer" or female == "Scorpio" or female == "Pisces":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-elif male == "Sagittarius":
-        if female == "Taurus" or female == "Virgo" or female == "Capricorn":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Cancer" or female == "Scorpio" or female == "Pisces":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-
-elif male == "Taurus":
-        if female == "Aries" or female == "Sagittarius" or female == "Gemini" or female == "Aquarius":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Leo" or female == "Libra":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-
-elif male == "Virgo":
-        if female == "Aries" or female == "Sagittarius" or female == "Gemini" or female == "Libra" or female == "Pisces":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Leo" or female == "Aquarius":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-
-elif male == "Capricorn":
-        if female == "Aries" or female == "Sagittarius" or female == "Gemini" or female == "Aquarius":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Leo" or female == "Libra":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-
-elif male == "Gemini":
-        if female == "Taurus" or female == "Cancer" or female == "Scorpio" or female == "Pisces":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Sagittarius" or female == "Virgo" or female == "Capricorn":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-
-elif male == "Libra":
-        if female == "Virgo" or female == "Capricorn" or female == "Cancer" or female == "Scorpio":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Aries" or female == "Taurus" or female == "Pisces":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-
-elif male == "Aquarius":
-        if female == "Taurus" or female == "Virgo" or female == "Capricorn" or female == "Cancer":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Scorpio" or female == "Pisces":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-
-elif male == "Cancer":
-        if female == "Aries" or female == "Gemini" or female == "Libra" or female == "Aquarius":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Leo" or female == "Sagittarius":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-
-elif male == "Scorpio":
-        if female == "Gemini" or female == "Libra" or female == "Aquarius":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Aries" or female == "Leo":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
-
-elif male == "Pisces":
-        if female == "Gemini" or female == "Libra" or female == "Aquarius":
-            print("Marriage Compatibility :  Not Favorable")
-        elif female == "Aries" or female == "Leo" or female == "Sagittarius" or female == "Virgo":
-            print("Marriage Compatibility :  Favorable Match")
-        else:
-            print("Marriage Compatibility :  Great Match")
+if run==False:
+    print("There was an error while data enterning")
 else:
-     print("Invalid info givem")
+    if male == "Aries":
+        if female in ["Taurus", "Capricorn", "Cancer", "Scorpio"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Virgo", "Pisces"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
 
+    elif male == "Leo":
+        if female in ["Virgo", "Capricorn"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Taurus", "Aquarius", "Cancer", "Scorpio", "Pisces"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
 
+    elif male == "Sagittarius":
+        if female in ["Taurus", "Virgo", "Capricorn"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Cancer", "Scorpio", "Pisces"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
 
+    elif male == "Taurus":
+        if female in ["Aries", "Sagittarius", "Gemini", "Aquarius"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Leo", "Libra"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
 
+    elif male == "Virgo":
+        if female in ["Aries", "Sagittarius", "Gemini", "Libra", "Pisces"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Leo", "Aquarius"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
 
+    elif male == "Capricorn":
+        if female in ["Aries", "Sagittarius", "Gemini", "Aquarius"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Leo", "Libra"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
+
+    elif male == "Gemini":
+        if female in ["Taurus", "Cancer", "Scorpio", "Pisces"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Sagittarius", "Virgo", "Capricorn"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
+
+    elif male == "Libra":
+        if female in ["Virgo", "Capricorn", "Cancer", "Scorpio"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Aries", "Taurus", "Pisces"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
+
+    elif male == "Aquarius":
+        if female in ["Taurus", "Virgo", "Capricorn", "Cancer"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Scorpio", "Pisces"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
+
+    elif male == "Cancer":
+        if female in ["Aries", "Gemini", "Libra", "Aquarius"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Leo", "Sagittarius"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
+
+    elif male == "Scorpio":
+        if female in ["Gemini", "Libra", "Aquarius"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Aries", "Leo"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
+
+    elif male == "Pisces":
+        if female in ["Gemini", "Libra", "Aquarius"]:
+            print("Marriage Compatibility : Not Favorable")
+        elif female in ["Aries", "Leo", "Sagittarius", "Virgo"]:
+            print("Marriage Compatibility : Favorable Match")
+        else:
+            print("Marriage Compatibility : Great Match")
+
+    else:
+        print("Invalid info givem")
