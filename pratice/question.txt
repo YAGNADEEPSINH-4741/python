@@ -25,3 +25,11 @@
 13.Create a dictionary and change/update the value of an existing key.
 
 14.Create a dictionary and delete a key-value pair.
+
+15.Use a for loop to print all elements of a list.
+
+16.Use a for loop to find the sum of all numbers in a list.
+
+17.Use a while loop to print numbers from 1 to 10.
+
+18.Use a loop to count how many times a specific element appears in a list.
