@@ -33,3 +33,5 @@
 17.Use a while loop to print numbers from 1 to 10.
 
 18.Use a loop to count how many times a specific element appears in a list.
+
+19.Create a list of numbers and use a loop to find and print the average (mean) of all elements in the list.
