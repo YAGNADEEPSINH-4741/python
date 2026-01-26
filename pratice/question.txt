@@ -35,3 +35,6 @@
 18.Use a loop to count how many times a specific element appears in a list.
 
 19.Create a list of numbers and use a loop to find and print the average (mean) of all elements in the list.
+
+20.Create a tuple of numbers Find the largest and smallest elements.
+
