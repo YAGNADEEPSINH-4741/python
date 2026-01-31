@@ -38,3 +38,5 @@
 
 20.Create a tuple of numbers Find the largest and smallest elements.
 
+21.Store the largest and smallest values of the tuple in a dictionary with keys "max" and "min"
+
