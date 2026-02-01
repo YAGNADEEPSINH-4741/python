@@ -40,3 +40,6 @@
 
 21.Store the largest and smallest values of the tuple in a dictionary with keys "max" and "min"
 
+22.Remove all even numbers from the list using a loop
+
+
