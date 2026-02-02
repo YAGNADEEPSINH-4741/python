@@ -42,4 +42,5 @@
 
 22.Remove all even numbers from the list using a loop
 
+23.Create a tuple of numbers and use a loop to count how many numbers are greater than 10.
 
