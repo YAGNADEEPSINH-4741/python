@@ -44,3 +44,12 @@
 
 23.Create a tuple of numbers and use a loop to count how many numbers are greater than 10.
 
+24.DO THE FOLLOWING  PATTERN DYNAMICALLY
+
+1
+2  3
+4. 5. 6
+6. 5. 4
+3. 2
+1
+
