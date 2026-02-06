@@ -53,3 +53,10 @@
 3. 2
 1
 
+25.DO THE FOLLOWING  PATTERN 
+
+A
+a b
+A b c
+a b c d
+A b c d e
