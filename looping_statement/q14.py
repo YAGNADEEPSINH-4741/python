@@ -1,5 +1,4 @@
-#write a program to findout coutries whose area is greater given area. 
-
+# Write a program to find countries whose area is greater than a given area
 
 country_area = {
     "Russia": 17098242,
@@ -14,7 +13,20 @@ country_area = {
     "Algeria": 2381741
 }
 
-area=int(input("Enter area of country  : "))
-for no in country_area:
-    if country_area[no]>area:
-        print(no," ",country_area[no])
+try:
+    min_area = int(input("Enter minimum area: "))
+
+    print("\nCountries with area greater than", min_area, ":\n")
+
+    found = False
+
+    for country, area in country_area.items():
+        if area > min_area:
+            print(f"{country:<15} {area}")
+            found = True
+
+    if not found:
+        print("No countries found.")
+
+except ValueError:
+    print("Please enter a valid number.")
