@@ -2,4 +2,20 @@ function
 -----------------------------
 1)write a program to create function that convert given fahrenheit into celsius 
 
+
 2)write a program to create function that calculate and return simple interest of given amount rate and year 
+
+3) write a program to figure out octal of given decimal number 
+4) write a program to figure out hexadcimal of given decimal number 
+5) write a program to figure out factorial of given number 
+
+lambda function 
+6)write a program to calculate compound interest using lambda function 
+7)write a program to calculate fahrenheit of given celsius using lambda function 
+
+8)write a program to convert list that has mixed case countries names into lowercase countries name using lambda
+9)write a program to convert list that has mixed case countries names into uppercase countries name  using lambda
+
+10)write a program to filter word list that ends with asia using filter function 
+11)write a program to filter word list that ends with tan using filter function 
+12)write a program to filter largest number among each value in 2n list using filter function 
